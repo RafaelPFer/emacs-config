@@ -9,7 +9,6 @@
    '("5e2b82d4d3c794cdc1d46fe2a6ca54efed4df7caaefa3e80d6f566a9a24bc881"
      default))
  '(fringe-mode 0 nil (fringe))
- '(global-display-line-numbers-mode t)
  '(package-selected-packages
    '(auctex consult corfu ef-themes exec-path-from-shell magit marginalia
 	    orderless pdf-tools vertico))
@@ -24,8 +23,8 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Menlo" :foundry "nil" :slant normal :weight regular :height 120 :width normal)))))
 (setq make-backup-files nil)
-(setq indent-tabs-mode nil)
-(setq tab-width 4)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -44,3 +43,4 @@
 (marginalia-mode 1)
 (global-corfu-mode 1)
 (pdf-loader-install)
+(add-hook 'prog-mode-hook #'display-line-numbers-mode)
