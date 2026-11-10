@@ -11,7 +11,8 @@
  '(fringe-mode 0 nil (fringe))
  '(global-display-line-numbers-mode t)
  '(package-selected-packages
-   '(consult corfu ef-themes magit marginalia orderless vertico))
+   '(auctex consult corfu ef-themes exec-path-from-shell magit marginalia
+	    orderless pdf-tools vertico))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
@@ -37,6 +38,8 @@
 (setq completion-styles '(orderless basic)
       completion-category-overrides '((file (styles basic partial-completion))))
 
+(exec-path-from-shell-initialize) 
 (vertico-mode 1)
 (marginalia-mode 1)
 (global-corfu-mode 1)
+(pdf-loader-install)
