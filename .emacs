@@ -14,6 +14,7 @@
    '(auctex consult corfu ef-themes exec-path-from-shell magit marginalia
 	    orderless pdf-tools vertico))
  '(scroll-bar-mode nil)
+ '(tab-bar-mode t)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
 (custom-set-faces
