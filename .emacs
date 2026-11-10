@@ -22,9 +22,13 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Menlo" :foundry "nil" :slant normal :weight regular :height 120 :width normal)))))
+
 (setq make-backup-files nil)
+
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
+
+(setq eshell-scroll-show-maximum-output nil)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -33,6 +37,7 @@
 (add-to-list 'default-frame-alist '(fullscreen . fullboth))
 
 (setq make-pointer-invisible t)
+
 (setq ns-right-alternate-modifier 'nil)
 (setq ns-alternate-modifier 'meta)
 
@@ -40,8 +45,11 @@
       completion-category-overrides '((file (styles basic partial-completion))))
 
 (exec-path-from-shell-initialize) 
+
 (vertico-mode 1)
 (marginalia-mode 1)
 (global-corfu-mode 1)
+
 (pdf-loader-install)
+
 (add-hook 'prog-mode-hook #'display-line-numbers-mode)
