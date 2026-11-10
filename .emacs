@@ -11,7 +11,7 @@
  '(fringe-mode 0 nil (fringe))
  '(package-selected-packages
    '(auctex consult corfu ef-themes exec-path-from-shell magit marginalia
-	    orderless pdf-tools vertico))
+            orderless pdf-tools vertico))
  '(scroll-bar-mode nil)
  '(tab-bar-mode t)
  '(tool-bar-mode nil)
