@@ -32,6 +32,7 @@
 
 (add-to-list 'default-frame-alist '(fullscreen . fullboth))
 
+(setq make-pointer-invisible t)
 (setq ns-right-alternate-modifier 'nil)
 (setq ns-alternate-modifier 'meta)
 
