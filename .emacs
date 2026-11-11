@@ -9,6 +9,7 @@
    '("5e2b82d4d3c794cdc1d46fe2a6ca54efed4df7caaefa3e80d6f566a9a24bc881"
      default))
  '(fringe-mode 0 nil (fringe))
+ '(org-agenda-files nil)
  '(package-selected-packages
    '(auctex consult corfu ef-themes exec-path-from-shell magit marginalia
             orderless pdf-tools vertico))
