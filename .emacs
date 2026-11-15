@@ -45,7 +45,7 @@
 
 (setq eshell-scroll-show-maximum-output nil)
 
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
+(add-to-list 'default-frame-alist '(fullscreen . fullboth))
 
 (setq make-pointer-invisible t)
 
