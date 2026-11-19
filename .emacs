@@ -26,6 +26,9 @@
      default))
  '(fringe-mode 0 nil (fringe))
  '(org-agenda-files nil)
+ '(package-selected-packages
+   '(consult corfu ef-themes exec-path-from-shell magit marginalia
+             orderless org-modern vertico))
  '(scroll-bar-mode nil)
  '(tab-bar-mode t)
  '(tool-bar-mode nil)
@@ -63,3 +66,5 @@
 (global-corfu-mode 1)
 
 (add-hook 'prog-mode-hook #'display-line-numbers-mode)
+
+(global-org-modern-mode)
